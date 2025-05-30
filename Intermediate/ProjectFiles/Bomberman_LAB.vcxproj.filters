@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\Bomberman_LAB.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Bomberman_LAB.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\Bomberman_LABEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.vsconfig" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\Bomberman_LAB">
+      <UniqueIdentifier>{639D2613-5F8B-347F-9393-DCF1D73FAF84}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Bomberman_LAB\Bomberman_LAB.Build.cs">
+      <Filter>Source\Bomberman_LAB</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Bomberman_LAB.cpp">
+      <Filter>Source\Bomberman_LAB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Bomberman_LAB.h">
+      <Filter>Source\Bomberman_LAB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Bomberman_LABCharacter.cpp">
+      <Filter>Source\Bomberman_LAB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Bomberman_LABCharacter.h">
+      <Filter>Source\Bomberman_LAB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Bomberman_LABGameMode.cpp">
+      <Filter>Source\Bomberman_LAB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Bomberman_LABGameMode.h">
+      <Filter>Source\Bomberman_LAB</Filter>
+    </ClCompile>
+    <Filter Include="Source\Bomberman_LAB\Private">
+      <UniqueIdentifier>{F1EADA46-A76A-333C-9C0A-3375630CC067}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\Bala.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\BasicBlock.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\Bloque.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\BloqueAcero.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\BloqueAleatorio.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\BloqueAleatorio_Ex.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\BloqueBurbuja.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\BloqueConcreto.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\BloqueDestructible.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\BloqueDiagonal.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\BloqueExplosivo.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\BloqueForma.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\BloqueGenerador.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\BloqueIndestructible.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\BloqueLadrillo.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\BloqueMadera.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\BloquePrueba.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\BloqueRandom.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\BloqueRotador.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\BloqueX.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\BloqueY.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\BloqueZ.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\Bomb.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\Bomba.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\BombaEx.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\BrickBlock.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\Builder_Test.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\Cannon.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\ConcreteBlock.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\CrearMapaCannons.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\CrearMapaTrampas.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\Director_Builder.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\Enemigo.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\EnemigoAcuatico.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\EnemigoAereo.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\EnemigoLaberintoX.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\EnemigoSubterraneo.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\EnemigoSubterraneo2.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\EnemigoTerrestre.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\EnemySpawner.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\Explosion.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\FabricaBloquesTest.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\Facade_Main.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\FactoryMethodTest.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\Generador.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\IPrototype_Test.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\Maze_Builder.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\Maze_BuilderConcrete.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\Maze_Test.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\PrototypeConcrete.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\Puerta_Ex.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\SteelBlock.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\TestSingleton.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\VolumenAgua.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\WoodBlock.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\WoodBlockTest.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\Bomberman_LAB\Public">
+      <UniqueIdentifier>{601E0B47-9160-36A2-AE6F-D536347B9689}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\Bala.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\BasicBlock.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\Bloque.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\BloqueAcero.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\BloqueAleatorio.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\BloqueAleatorio_Ex.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\BloqueBurbuja.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\BloqueConcreto.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\BloqueDestructible.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\BloqueDiagonal.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\BloqueExplosivo.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\BloqueForma.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\BloqueGenerador.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\BloqueIndestructible.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\BloqueLadrillo.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\BloqueMadera.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\BloquePrueba.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\BloqueRandom.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\BloqueRotador.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\BloqueX.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\BloqueY.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\BloqueZ.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\Bomb.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\Bomba.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\BombaEx.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\BrickBlock.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\Builder_Test.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\Cannon.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\ConcreteBlock.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\CrearMapaCannons.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\CrearMapaTrampas.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\Director_Builder.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\Enemigo.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\EnemigoAcuatico.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\EnemigoAereo.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\EnemigoLaberintoX.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\EnemigoSubterraneo.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\EnemigoSubterraneo2.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\EnemigoTerrestre.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\EnemySpawner.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\Explosion.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\FabricaBloquesTest.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\Facade_Main.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\FactoryMethodTest.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\Generador.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\IPrototype_Test.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\Maze_Builder.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\Maze_BuilderConcrete.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\Maze_Test.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\PrototypeConcrete.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\Puerta_Ex.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\SteelBlock.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\TestSingleton.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\VolumenAgua.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\WoodBlock.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\WoodBlockTest.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
