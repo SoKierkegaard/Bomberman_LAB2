@@ -53,11 +53,11 @@ void ABala::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	FVector PosicionActual = GetActorLocation();
-	float DistanciaRecorrida = PosicionActual.X - PosicionInicial.X;
+	float DistanciaRecorrida = PosicionActual.Y - PosicionInicial.Y;
 
 	if (DistanciaRecorrida < DistanciaObjetivo)
 	{
-		PosicionActual.X += 2000.0f * DeltaTime; // Mueve el proyectil hacia adelante
+		PosicionActual.Y += 2000.0f * DeltaTime; // Mueve el proyectil hacia adelante
 		SetActorLocation(PosicionActual);
 	}
 	else

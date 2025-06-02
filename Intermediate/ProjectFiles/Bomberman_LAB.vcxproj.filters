@@ -11,6 +11,8 @@
     <None Include="..\..\Source\Bomberman_LABEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.gitattributes" />
+    <None Include="..\..\.gitignore" />
     <None Include="..\..\.vsconfig" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
@@ -53,6 +55,57 @@
     </ClCompile>
     <ClCompile Include="..\..\Source\Bomberman_LAB\Bomberman_LABGameMode.h">
       <Filter>Source\Bomberman_LAB</Filter>
+    </ClCompile>
+    <Filter Include="Source\Bomberman_LAB\Builder_Examen">
+      <UniqueIdentifier>{910BE3AB-2CF2-33A2-BF4F-4942AB90890F}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Builder_Examen\Builder_Ejercito.cpp">
+      <Filter>Source\Bomberman_LAB\Builder_Examen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Builder_Examen\Builder_Ejercito.h">
+      <Filter>Source\Bomberman_LAB\Builder_Examen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Builder_Examen\Comandante.cpp">
+      <Filter>Source\Bomberman_LAB\Builder_Examen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Builder_Examen\Comandante.h">
+      <Filter>Source\Bomberman_LAB\Builder_Examen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Builder_Examen\Director_Ejercito.cpp">
+      <Filter>Source\Bomberman_LAB\Builder_Examen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Builder_Examen\Director_Ejercito.h">
+      <Filter>Source\Bomberman_LAB\Builder_Examen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Builder_Examen\Ejercito.cpp">
+      <Filter>Source\Bomberman_LAB\Builder_Examen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Builder_Examen\Ejercito.h">
+      <Filter>Source\Bomberman_LAB\Builder_Examen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Builder_Examen\Enemigo_Comun.cpp">
+      <Filter>Source\Bomberman_LAB\Builder_Examen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Builder_Examen\Enemigo_Comun.h">
+      <Filter>Source\Bomberman_LAB\Builder_Examen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Builder_Examen\IBuilder.cpp">
+      <Filter>Source\Bomberman_LAB\Builder_Examen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Builder_Examen\IBuilder.h">
+      <Filter>Source\Bomberman_LAB\Builder_Examen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Builder_Examen\IBuilder_Ejercito.cpp">
+      <Filter>Source\Bomberman_LAB\Builder_Examen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Builder_Examen\IBuilder_Ejercito.h">
+      <Filter>Source\Bomberman_LAB\Builder_Examen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Builder_Examen\Tanques.cpp">
+      <Filter>Source\Bomberman_LAB\Builder_Examen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Builder_Examen\Tanques.h">
+      <Filter>Source\Bomberman_LAB\Builder_Examen</Filter>
     </ClCompile>
     <Filter Include="Source\Bomberman_LAB\Private">
       <UniqueIdentifier>{F1EADA46-A76A-333C-9C0A-3375630CC067}</UniqueIdentifier>

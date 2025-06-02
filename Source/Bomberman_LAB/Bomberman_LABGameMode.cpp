@@ -27,6 +27,11 @@
 #include "IPrototype_Test.h"
 #include "Maze_BuilderConcrete.h"
 
+//Headers para el examen
+#include "Builder_Examen/Director_Ejercito.h"
+#include "Builder_Examen/Builder_Ejercito.h"
+
+
 
 ABomberman_LABGameMode::ABomberman_LABGameMode()
 {
@@ -51,7 +56,7 @@ void ABomberman_LABGameMode::BeginPlay()
 	}
 
 
-	GEngine->AddOnScreenDebugMessage(-1, -1, FColor::Red, TEXT("Bloque Spawning"));
+	//GEngine->AddOnScreenDebugMessage(-1, -1, FColor::Red, TEXT("Bloque Spawning"));
 
 	//SpawnEnemigos();
 	//GenerarLaberintoAleatorio();
@@ -62,7 +67,7 @@ void ABomberman_LABGameMode::BeginPlay()
 	//GetWorld()->SpawnActor<ABuilder_Test>(ABuilder_Test::StaticClass());
 	//SpawnBloqueMadera2();
 	//SpawnJugadorEnCasillaLibre();
-	GetWorld()->SpawnActor<ABloqueBurbuja>(
+	/*GetWorld()->SpawnActor<ABloqueBurbuja>(
 		ABloqueBurbuja::StaticClass(),
 		FVector(1000.f, 1000.f, 0.f),
 		FRotator::ZeroRotator
@@ -95,6 +100,30 @@ void ABomberman_LABGameMode::BeginPlay()
 	//AMaze_BuilderConcrete* MazeBuilder = GetWorld()->SpawnActor<AMaze_BuilderConcrete>(AMaze_BuilderConcrete::StaticClass());
 
 	//MazeBuilder->FullMaze();
+	*/
+
+
+
+	//BUILDER EXAMEN
+	ABuilder_Ejercito* BuilderEjercito;
+	ADirector_Ejercito* DirectorEjercito;
+
+	if (GetWorld())
+	{
+		// Crear el builder y el director
+		BuilderEjercito = GetWorld()->SpawnActor<ABuilder_Ejercito>(ABuilder_Ejercito::StaticClass());
+		DirectorEjercito = GetWorld()->SpawnActor<ADirector_Ejercito>(ADirector_Ejercito::StaticClass());
+		if (BuilderEjercito && DirectorEjercito)
+		{
+			// Configurar el director con el builder
+			DirectorEjercito->SetBuilder(BuilderEjercito);
+			DirectorEjercito->ConstructEjercitoCompleto();
+		}
+		else
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Error al crear Builder o Director del Ejercito."));
+		}
+	}
 
 
 }
