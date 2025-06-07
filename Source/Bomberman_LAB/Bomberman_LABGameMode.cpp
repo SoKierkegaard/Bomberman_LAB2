@@ -30,7 +30,10 @@
 //Headers para el examen
 #include "Builder_Examen/Director_Ejercito.h"
 #include "Builder_Examen/Builder_Ejercito.h"
+#include "Builder_Examen/Builder_EX.h"
 
+//Headers para el Composite
+#include "Composite_LAB/Composite_Enemy.h"
 
 
 ABomberman_LABGameMode::ABomberman_LABGameMode()
@@ -102,12 +105,31 @@ void ABomberman_LABGameMode::BeginPlay()
 	//MazeBuilder->FullMaze();
 	*/
 
+	//Composite_LAB
+	GetWorld()->SpawnActor<AComposite_Enemy>(AComposite_Enemy::StaticClass(), FVector(0.f, 0.f, 0.f), FRotator::ZeroRotator);
+
+
 
 
 	//BUILDER EXAMEN
-	ABuilder_Ejercito* BuilderEjercito;
+	/*
+	ABuilder_Ejercito* Builder1;
 	ADirector_Ejercito* DirectorEjercito;
+	ABuilder_EX* Builder2;
+	// Crear el builder y el director
+	Builder1 = GetWorld()->SpawnActor<ABuilder_Ejercito>(ABuilder_Ejercito::StaticClass());
+	Builder2 = GetWorld()->SpawnActor<ABuilder_EX>(ABuilder_EX::StaticClass());
+	DirectorEjercito = GetWorld()->SpawnActor<ADirector_Ejercito>(ADirector_Ejercito::StaticClass());
 
+	// Configurar el director con el builder
+	DirectorEjercito->SetBuilder(Builder1);
+	DirectorEjercito->Ejercito1();
+	//DirectorEjercito->Ejercito2();
+	DirectorEjercito->SetBuilder(Builder2);
+	//DirectorEjercito->Ejercito3();
+	//DirectorEjercito->Ejercito4();
+	*/
+	/*
 	if (GetWorld())
 	{
 		// Crear el builder y el director
@@ -124,7 +146,7 @@ void ABomberman_LABGameMode::BeginPlay()
 			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Error al crear Builder o Director del Ejercito."));
 		}
 	}
-
+	*/
 
 }
 

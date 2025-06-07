@@ -11,14 +11,16 @@ ACannon::ACannon()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	
-	MallaCannon = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MallaCannon"));
-	MallaCannon->SetupAttachment(RootComponent);
+	MeshComponent = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("MeshComponent"));
+	//RootComponent = MeshComp;
+	MeshComponent->SetupAttachment(RootComponent);
 
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> ObjetoMallaCannon(TEXT("/Script/Engine.StaticMesh'/Game/StarterContent/Shapes/Shape_Cube.Shape_Cube'"));
+	static ConstructorHelpers::FObjectFinder<USkeletalMesh> ObjetoMeshComponent(TEXT("/Script/Engine.SkeletalMesh'/Game/AnimalVarietyPack/Crow/Meshes/SK_Crow.SK_Crow'"));
 
-	if (ObjetoMallaCannon.Succeeded())
+	if (ObjetoMeshComponent.Succeeded())
 	{
-		MallaCannon->SetStaticMesh(ObjetoMallaCannon.Object);
+		MeshComponent->SetSkeletalMesh(ObjetoMeshComponent.Object);
+		MeshComponent->SetRelativeScale3D(FVector(2.f, 2.f, 2.f));
 	}
 }
 

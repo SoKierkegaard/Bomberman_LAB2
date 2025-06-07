@@ -24,9 +24,14 @@ class BOMBERMAN_LAB_API IIBuilder_Ejercito
 public:
 	//Funciones virtuales puras que se implementaran en las clases que hereden de esta interfaz.
 	virtual void ConstruirEjercitoCompleto() = 0;
-	virtual void ConstruirSoldados() = 0;
-	virtual void ConstruirComandantes() = 0;
-	virtual void ConstruirTanques() = 0;
-	virtual void ConstruirTorretas() = 0;
+	virtual void ConstruirSoldados(int32 cantidad) = 0;
+	virtual void ConstruirComandantes(int32 cantidad) = 0;
+	virtual void ConstruirTanques(int32 cantidad) = 0;
+	virtual void ConstruirTorretas(int32 cantidad) = 0;
 	virtual class AEjercito*GetEjercito() = 0;
+
+	virtual void Ejercito1() = 0;
+	virtual void Ejercito2() = 0;
+	virtual void Ejercito3() = 0;
+	virtual void Ejercito4() = 0;
 };

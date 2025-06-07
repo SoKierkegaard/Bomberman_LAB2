@@ -30,9 +30,15 @@ public:
 	//Metodos de la interfaz IIBuilder_Ejercito
 
 	virtual void ConstruirEjercitoCompleto();
-	virtual void ConstruirSoldados();
-	virtual void ConstruirComandantes();
-	virtual void ConstruirTanques();
-	virtual void ConstruirTorretas();
+	virtual void ConstruirSoldados(int32 cantidad);
+	virtual void ConstruirComandantes(int32 cantidad);
+	virtual void ConstruirTanques(int32 cantidad);
+	virtual void ConstruirTorretas(int32 cantidad);
 	virtual AEjercito* GetEjercito();
+
+
+	virtual void Ejercito1();
+	virtual void Ejercito2();
+	virtual void Ejercito3();
+	virtual void Ejercito4();
 };

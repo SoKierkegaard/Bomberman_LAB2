@@ -41,4 +41,7 @@ private:
 		const FHitResult& SweepResult
 	);
 
+public:
+	bool DireccionConseguida;
+	FVector PosicionJugador;
 };

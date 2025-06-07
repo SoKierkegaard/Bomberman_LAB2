@@ -65,6 +65,12 @@
     <ClCompile Include="..\..\Source\Bomberman_LAB\Builder_Examen\Builder_Ejercito.h">
       <Filter>Source\Bomberman_LAB\Builder_Examen</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Builder_Examen\Builder_EX.cpp">
+      <Filter>Source\Bomberman_LAB\Builder_Examen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Builder_Examen\Builder_EX.h">
+      <Filter>Source\Bomberman_LAB\Builder_Examen</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Bomberman_LAB\Builder_Examen\Comandante.cpp">
       <Filter>Source\Bomberman_LAB\Builder_Examen</Filter>
     </ClCompile>
@@ -106,6 +112,57 @@
     </ClCompile>
     <ClCompile Include="..\..\Source\Bomberman_LAB\Builder_Examen\Tanques.h">
       <Filter>Source\Bomberman_LAB\Builder_Examen</Filter>
+    </ClCompile>
+    <Filter Include="Source\Bomberman_LAB\Composite_LAB">
+      <UniqueIdentifier>{32263FB4-22C7-3ECF-BF0F-1A47B6DA6551}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Composite_LAB\Armas_Enemigo.cpp">
+      <Filter>Source\Bomberman_LAB\Composite_LAB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Composite_LAB\Armas_Enemigo.h">
+      <Filter>Source\Bomberman_LAB\Composite_LAB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Composite_LAB\Bala_Mortar.cpp">
+      <Filter>Source\Bomberman_LAB\Composite_LAB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Composite_LAB\Bala_Mortar.h">
+      <Filter>Source\Bomberman_LAB\Composite_LAB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Composite_LAB\Bala_Rifle.cpp">
+      <Filter>Source\Bomberman_LAB\Composite_LAB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Composite_LAB\Bala_Rifle.h">
+      <Filter>Source\Bomberman_LAB\Composite_LAB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Composite_LAB\Composite_Enemy.cpp">
+      <Filter>Source\Bomberman_LAB\Composite_LAB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Composite_LAB\Composite_Enemy.h">
+      <Filter>Source\Bomberman_LAB\Composite_LAB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Composite_LAB\CuerpoEnemigo.cpp">
+      <Filter>Source\Bomberman_LAB\Composite_LAB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Composite_LAB\CuerpoEnemigo.h">
+      <Filter>Source\Bomberman_LAB\Composite_LAB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Composite_LAB\IPartes_Enemigo.cpp">
+      <Filter>Source\Bomberman_LAB\Composite_LAB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Composite_LAB\IPartes_Enemigo.h">
+      <Filter>Source\Bomberman_LAB\Composite_LAB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Composite_LAB\Mortar_Enemigo.cpp">
+      <Filter>Source\Bomberman_LAB\Composite_LAB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Composite_LAB\Mortar_Enemigo.h">
+      <Filter>Source\Bomberman_LAB\Composite_LAB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Composite_LAB\Rifle_Enemigo.cpp">
+      <Filter>Source\Bomberman_LAB\Composite_LAB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Composite_LAB\Rifle_Enemigo.h">
+      <Filter>Source\Bomberman_LAB\Composite_LAB</Filter>
     </ClCompile>
     <Filter Include="Source\Bomberman_LAB\Private">
       <UniqueIdentifier>{F1EADA46-A76A-333C-9C0A-3375630CC067}</UniqueIdentifier>
@@ -186,6 +243,9 @@
       <Filter>Source\Bomberman_LAB\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Bomberman_LAB\Private\BrickBlock.cpp">
+      <Filter>Source\Bomberman_LAB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Private\Builder2_Examen.cpp">
       <Filter>Source\Bomberman_LAB\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Bomberman_LAB\Private\Builder_Test.cpp">
@@ -357,6 +417,9 @@
       <Filter>Source\Bomberman_LAB\Public</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Bomberman_LAB\Public\BrickBlock.h">
+      <Filter>Source\Bomberman_LAB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bomberman_LAB\Public\Builder2_Examen.h">
       <Filter>Source\Bomberman_LAB\Public</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Bomberman_LAB\Public\Builder_Test.h">

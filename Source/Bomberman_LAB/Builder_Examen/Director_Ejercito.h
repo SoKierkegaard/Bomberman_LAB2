@@ -37,4 +37,9 @@ public:
 	void ConstructTanquesYTorretas();
 
 	void GetEjercito();
+
+	void Ejercito1();
+	void Ejercito2();
+	void Ejercito3();
+	void Ejercito4();
 };

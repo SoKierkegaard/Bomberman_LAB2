@@ -14,13 +14,11 @@ class BOMBERMAN_LAB_API ACannon : public AActor
 public:	
 	// Sets default values for this actor's properties
 	ACannon();
+	USkeletalMeshComponent* MeshComponent;
 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Componentes")
-	UStaticMeshComponent* MallaCannon;
 
 public:	
 	// Called every frame

@@ -46,30 +46,49 @@ void ABala::BeginPlay()
 	Super::BeginPlay();
 	// Inicializa la posición inicial al comenzar el juego
 	PosicionInicial = GetActorLocation();
+	DireccionConseguida = true;
 }
 
 // Called every frame
 void ABala::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	FVector PosicionActual = GetActorLocation();
-	float DistanciaRecorrida = PosicionActual.Y - PosicionInicial.Y;
 
-	if (DistanciaRecorrida < DistanciaObjetivo)
-	{
-		PosicionActual.Y += 2000.0f * DeltaTime; // Mueve el proyectil hacia adelante
-		SetActorLocation(PosicionActual);
+	// Obtener referencia al jugador (suponiendo que es el jugador principal)
+	AActor* Jugador = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
+	if (!Jugador) return; // Si no encuentra jugador, no hace nada
+
+	FVector PosicionActual = GetActorLocation();
+	if(DireccionConseguida){ 
+		PosicionJugador = Jugador->GetActorLocation(); 
+		DireccionConseguida = false; // Solo calcular la dirección una vez al inicio
 	}
-	else
+	
+
+	// Calcular dirección normalizada hacia el jugador
+	FVector Direccion = (PosicionJugador - PosicionActual).GetSafeNormal();
+
+	// Velocidad a la que quieres que se mueva la bala
+	float Velocidad = 1000.0f;
+
+	// Mover la bala hacia el jugador
+	PosicionActual += Direccion * Velocidad * DeltaTime;
+	SetActorLocation(PosicionActual);
+
+	float DistanciaRecorrida = FVector::Dist(PosicionActual,PosicionInicial);
+	float DistanciaMaxima = 3000.0f; 
+	if (DistanciaRecorrida > DistanciaMaxima || FVector::Dist(PosicionActual, PosicionJugador) < 50.0f)
 	{
-		// Destruye el proyectil después de alcanzar la distancia objetivo
 		Destroy();
 	}
+
 }
+
 
 void ABala::OnOverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult) 
 {
+	/*
 	if (OtherActor && OtherActor != this)
 	{
 		if (OtherActor->IsA(ABloque::StaticClass()))
@@ -89,4 +108,5 @@ void ABala::OnOverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* Oth
 			OtherActor->Destroy();
 		}
 	}
+	*/
 }

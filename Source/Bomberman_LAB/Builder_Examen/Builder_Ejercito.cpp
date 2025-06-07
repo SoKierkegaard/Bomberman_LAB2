@@ -35,14 +35,17 @@ void ABuilder_Ejercito::Tick(float DeltaTime)
 void ABuilder_Ejercito::ConstruirEjercitoCompleto()
 {
 	// Llamamos a los métodos para construir cada tipo de unidad del ejercito
+	/*
 	ConstruirSoldados();
 	ConstruirComandantes();
 	ConstruirTanques();
 	ConstruirTorretas();
+	*/
 }
 
-void ABuilder_Ejercito::ConstruirSoldados()
+void ABuilder_Ejercito::ConstruirSoldados(int32 cantidad)
 {
+	int contador = 0;
 	if (Ejercito) // Comprobamos que el Ejercito no sea nulo antes de intentar acceder a sus propiedades
 	{
 		// Recorremos las posiciones de los soldados y los creamos en el mundo
@@ -51,19 +54,22 @@ void ABuilder_Ejercito::ConstruirSoldados()
 			for (int32 j = 0; j < Ejercito->PosicionesSoldados[i].Num(); j++)
 			{
 				int32 Tropa = Ejercito->PosicionesSoldados[i][j];
-				if (Tropa==1) {
+				
+				if (Tropa==1 && contador<=cantidad ) {
 					GetWorld()->SpawnActor<AEnemigo_Comun>(AEnemigo_Comun::StaticClass(), 
 						FVector(Ejercito->XInicial + i * Ejercito->EspacioEntreUnidades, 
 						Ejercito->YInicial + j * Ejercito->EspacioEntreUnidades, 
 						Ejercito->ZInicial), FRotator::ZeroRotator);
+					contador++;
 				}
 			}
 		}
 	}
 }
 
-void ABuilder_Ejercito::ConstruirComandantes()
+void ABuilder_Ejercito::ConstruirComandantes(int32 cantidad)
 {
+	int contador = 0;
 	if (Ejercito)
 	{
 		// Recorremos las posiciones de los comandantes y los creamos en el mundo
@@ -71,20 +77,23 @@ void ABuilder_Ejercito::ConstruirComandantes()
 		{
 			for (int32 j = 0; j < Ejercito->PosicionesComandantes[i].Num(); j++)
 			{
+				
 				int32 Tropa = Ejercito->PosicionesComandantes[i][j];
-				if (Tropa == 3) {
+				if (Tropa == 3 && contador <= cantidad) {
 					GetWorld()->SpawnActor<AComandante>(AComandante::StaticClass(),
 						FVector(Ejercito->XInicial + i * Ejercito->EspacioEntreUnidades,
 							Ejercito->YInicial + j * Ejercito->EspacioEntreUnidades,
 							Ejercito->ZInicial), FRotator::ZeroRotator);
+					contador++;
 				}
 			}
 		}
 	}
 }
 
-void ABuilder_Ejercito::ConstruirTanques()
+void ABuilder_Ejercito::ConstruirTanques(int32 cantidad)
 {
+	int contador = 0;
 	if (Ejercito)
 	{
 		// Recorremos las posiciones de los tanques y los creamos en el mundo
@@ -92,20 +101,23 @@ void ABuilder_Ejercito::ConstruirTanques()
 		{
 			for (int32 j = 0; j < Ejercito->PosicionesTanques[i].Num(); j++)
 			{
+				
 				int32 Tropa = Ejercito->PosicionesTanques[i][j];
-				if (Tropa == 2) {
+				if (Tropa == 2 && contador <= cantidad) {
 					GetWorld()->SpawnActor<ATanques>(ATanques::StaticClass(),
 						FVector(Ejercito->XInicial + i * Ejercito->EspacioEntreUnidades,
 							Ejercito->YInicial + j * Ejercito->EspacioEntreUnidades,
 							Ejercito->ZInicial), FRotator::ZeroRotator);
+					contador++;
 				}
 			}
 		}
 	}
 }
 
-void ABuilder_Ejercito::ConstruirTorretas()
+void ABuilder_Ejercito::ConstruirTorretas(int32 cantidad)
 {
+	int contador = 0;
 	if (Ejercito)
 	{
 		// Recorremos las posiciones de las torretas y las creamos en el mundo
@@ -113,19 +125,50 @@ void ABuilder_Ejercito::ConstruirTorretas()
 		{
 			for (int32 j = 0; j < Ejercito->PosicionesTorretas[i].Num(); j++)
 			{
+				
 				int32 Tropa = Ejercito->PosicionesTorretas[i][j];
-				if (Tropa == 4) {
+				if (Tropa == 4 && contador <= cantidad) {
 					GetWorld()->SpawnActor<ACannon>(ACannon::StaticClass(),
 						FVector(Ejercito->XInicial + i * Ejercito->EspacioEntreUnidades,
 							Ejercito->YInicial + j * Ejercito->EspacioEntreUnidades,
 							Ejercito->ZInicial+500.f), FRotator::ZeroRotator);
+					contador++;
 				}
 			}
 		}
 	}
 }
 
+
 AEjercito* ABuilder_Ejercito::GetEjercito()
 {
 	return Ejercito;
+}
+
+void ABuilder_Ejercito::Ejercito1()
+{
+	ConstruirSoldados(1);
+	ConstruirComandantes(2);
+	ConstruirTorretas(3);
+}
+
+void ABuilder_Ejercito::Ejercito2()
+{
+	ConstruirSoldados(1);
+	ConstruirComandantes(1);
+	ConstruirTorretas(0);
+}
+
+void ABuilder_Ejercito::Ejercito3()
+{
+	ConstruirSoldados(6);
+	ConstruirComandantes(0);
+	ConstruirTorretas(3);
+}
+
+void ABuilder_Ejercito::Ejercito4()
+{
+	ConstruirSoldados(6);
+	ConstruirComandantes(1);
+	ConstruirTorretas(0);
 }

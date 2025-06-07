@@ -1,0 +1,19 @@
+{
+  "targets": {
+    "Bomberman_LABEditor": {
+      "targetType": "Editor",
+      "targetPath": "C:\\UnrealProjects\\Bomberman_LAB\\Source\\Bomberman_LABEditor.Target.cs",
+      "projectPath": "C:\\UnrealProjects\\Bomberman_LAB\\Bomberman_LAB.uproject",
+      "configurations": [
+        "Development"
+      ],
+      "platforms": [
+        "Win64"
+      ],
+      "architectures": [],
+      "configurationsAndPlatforms": [
+        "Development-Win64"
+      ]
+    }
+  }
+}

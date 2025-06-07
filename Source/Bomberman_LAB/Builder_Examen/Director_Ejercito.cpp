@@ -40,7 +40,7 @@ void ADirector_Ejercito::ConstructEjercitoCompleto()
 {
 	if (Builder)
 	{
-		Builder->ConstruirEjercitoCompleto();
+		//Builder->ConstruirEjercitoCompleto();
 	}
 	else
 	{
@@ -52,7 +52,7 @@ void ADirector_Ejercito::ConstructSoldados()
 {
 	if (Builder)
 	{
-		Builder->ConstruirSoldados();
+		//Builder->ConstruirSoldados();
 	}
 	else
 	{
@@ -64,8 +64,8 @@ void ADirector_Ejercito::ConstructSoldadosYComandantes()
 {
 	if (Builder)
 	{
-		Builder->ConstruirSoldados();
-		Builder->ConstruirComandantes();
+		//Builder->ConstruirSoldados();
+		//Builder->ConstruirComandantes();
 	}
 	else
 	{
@@ -77,8 +77,8 @@ void ADirector_Ejercito::ConstructComandantesYTanques()
 {
 	if (Builder)
 	{
-		Builder->ConstruirComandantes();
-		Builder->ConstruirTanques();
+		//Builder->ConstruirComandantes();
+		//Builder->ConstruirTanques();
 	}
 	else
 	{
@@ -90,8 +90,8 @@ void ADirector_Ejercito::ConstructSoldadosYTorretas()
 {
 	if (Builder)
 	{
-		Builder->ConstruirSoldados();
-		Builder->ConstruirTorretas();
+		//Builder->ConstruirSoldados();
+		//Builder->ConstruirTorretas();
 	}
 	else
 	{
@@ -103,8 +103,8 @@ void ADirector_Ejercito::ConstructTanquesYTorretas()
 {
 	if (Builder)
 	{
-		Builder->ConstruirTanques();
-		Builder->ConstruirTorretas();
+		//Builder->ConstruirTanques();
+		//Builder->ConstruirTorretas();
 	}
 	else
 	{
@@ -116,4 +116,24 @@ void ADirector_Ejercito::GetEjercito()
 {
 	//Obtenemos el Ejercito 
 	Builder->GetEjercito();
+}
+
+void ADirector_Ejercito::Ejercito1()
+{
+	Builder->Ejercito1();
+}
+
+void ADirector_Ejercito::Ejercito2()
+{
+	Builder->Ejercito2();
+}
+
+void ADirector_Ejercito::Ejercito3()
+{
+	Builder->Ejercito3();
+}
+
+void ADirector_Ejercito::Ejercito4()
+{
+	Builder->Ejercito4();
 }

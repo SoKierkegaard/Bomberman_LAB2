@@ -15,7 +15,7 @@ public:
 	// Sets default values for this actor's properties
 	AEnemigo_Comun();
 
-	UStaticMeshComponent* MeshComponent;//Componente de malla estatica para el enemigo comun
+	USkeletalMeshComponent* MeshComponent;//Componente de malla estatica para el enemigo comun
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
